@@ -1,3 +1,15 @@
-<h2>Olympic games app</h2>
-<hr />
-<p>{{ (olympics$ | async)?.length }} data loaded</p>
+<div class=" w-screen flex flex-col items-center">
+
+  <header>
+    <h1 class="font-bold text-2xl m-10" >Olympic games app</h1>
+    
+  </header>
+  
+  <div class="grid grid-cols-2 gap-4 mb-10 ">
+    <app-summary-card [title]="'Total number of years'" [content]="NumberOfJOs">
+    </app-summary-card>
+    <app-summary-card [title]="'Total number of countries'" [content]="NumberOfCountries">
+    </app-summary-card>
+  </div>
+  <app-pie-chart [chartData]="PiechartData" />
+</div>

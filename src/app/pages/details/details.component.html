@@ -1,0 +1,21 @@
+<div class="flex flex-col font-sans mx-auto p-6 items-center justify-center text-center w-screen overflow-hidden">
+
+    <button 
+    class="absolute top-4 left-4 bg-teal-600 text-white py-2 px-4 rounded-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-opacity-50"
+    routerLink="/">
+    Back
+</button>
+
+    <h1 class="text-white text-2xl font-bold mb-4 bg-teal-600 rounded-md py-2 px-4 text-center">{{ countryName
+        }}</h1>
+
+    <div class="grid grid-cols-3 gap-4 mb-10">
+        <app-summary-card [title]="'Number of entrie'" [content]="totalParticipations">
+        </app-summary-card>
+        <app-summary-card [title]="'Total number medals'" [content]="totalMedals">
+        </app-summary-card>
+        <app-summary-card [title]="'Total number of athletes'" [content]="totalAthletes">
+        </app-summary-card>
+    </div>
+      <app-line-chart  [chartData]="chartData" />
+</div>

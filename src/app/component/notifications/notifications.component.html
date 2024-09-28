@@ -1,0 +1,7 @@
+<div class="notification-container">
+    <div *ngFor="let message of messages; let i = index" class="notification">
+      <span>{{ message }}</span>
+      <button (click)="removeMessage(i)">X</button>
+    </div>
+  </div>
+  
