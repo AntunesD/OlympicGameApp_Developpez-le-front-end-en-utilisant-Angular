@@ -1,14 +1,14 @@
 <div class=" w-screen flex flex-col items-center">
 
   <header>
-    <h1 class="font-bold text-2xl m-10" >Olympic games app</h1>
+    <h1 class="font-bold text-2xl mb-10 mt-5" >Olympic games app</h1>
     
   </header>
-  
+  <h1 class="text-white text-2xl mb-4 bg-teal-600 rounded-md pb-2  px-4 text-center">Medals per Country</h1>
   <div class="grid grid-cols-2 gap-4 mb-10 ">
-    <app-summary-card [title]="'Total number of years'" [content]="NumberOfJOs">
+    <app-summary-card [title]="'Number of JOs'" [content]="NumberOfJOs">
     </app-summary-card>
-    <app-summary-card [title]="'Total number of countries'" [content]="NumberOfCountries">
+    <app-summary-card [title]="'Number of countries'" [content]="NumberOfCountries">
     </app-summary-card>
   </div>
   <app-pie-chart [chartData]="PiechartData" />

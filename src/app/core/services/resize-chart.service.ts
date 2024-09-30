@@ -8,7 +8,7 @@ import { debounceTime, map, startWith } from 'rxjs/operators';
 
 export class ResizeChartService {
   private maxWidth = 1024; // Largeur maximale du graphique
-  private defaultHeight = 400; // Hauteur par défaut du graphique
+  private defaultHeight = 300; // Hauteur par défaut du graphique
 
   constructor() {}
 
